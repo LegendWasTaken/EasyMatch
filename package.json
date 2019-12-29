@@ -1,0 +1,19 @@
+{
+  "name": "easymatch",
+  "version": "1.0.0",
+  "description": "A node package made for when you need to match things, but really can't be asked to use a regex.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LegendWasTaken/EasyMatch.git"
+  },
+  "author": "NotLegend",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LegendWasTaken/EasyMatch/issues"
+  },
+  "homepage": "https://github.com/LegendWasTaken/EasyMatch#readme"
+}
