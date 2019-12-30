@@ -1,6 +1,6 @@
 {
   "name": "@notlegend/easymatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node package made for when you need to match things, but really can't be asked to use a regex.",
   "main": "index.js",
   "scripts": {
