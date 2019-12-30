@@ -28,3 +28,5 @@ class Matcher {
         return matchobj;
     }
 }
+
+module.exports = Matcher;
