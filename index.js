@@ -13,15 +13,14 @@ class Matcher {
         let objnames = names.map(element => element.replace(this.startChar, "").replace(this.endChar, ""));
         let matchobj = {};
         let pat = matched;
+
         for(let i=0; i<objnames.length; i++){
             matchobj[objnames[i]] = "";
-            pat = pat.replace(names[i], "(.+)")
+            pat = pat.replace(names[i], "§Q§")
         }
-        pat = new RegExp(pat);
+        pat = pat.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+        pat = new RegExp(pat.replace(/§Q§/g, "(.+)"));
         let res = string.match(pat);
-        if(res === null){
-
-        }
         for(let i=0; i<objnames.length; i++){
             matchobj[objnames[i]] = res === null ? null : res[i + 1];
         }
